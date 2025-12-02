@@ -21,7 +21,7 @@ for s, e in id_ranges:
     #
     for id in range(s, e + 1):
         #
-        # Convert to string and count non-overlapping repititions...
+        # Convert to string and count non-overlapping repetitions...
         #
         id_string = str(id)
         id_len = len(id_string)
