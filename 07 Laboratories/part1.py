@@ -4,7 +4,6 @@ DATAFILE = "input.txt"
 
 START = 'S'
 SPLITTER = '^'
-SPACE = '.'
 
 split_count = 0
 beams = set()

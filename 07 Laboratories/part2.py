@@ -4,7 +4,6 @@ DATAFILE = "input.txt"
 
 START = 'S'
 SPLITTER = '^'
-SPACE = '.'
 
 beams = {}
 
@@ -23,7 +22,7 @@ for y in range(2, length-1, 2):
             if x > 0:
                 new_beams[x-1] = new_beams.get(x-1,0) + beams[x]
             if x < width-1:
-                new_beams[x+1] = new_beams.get(x+1,0) + beams[x]
+                new_beams[x+1] = beams[x]
         else:
             new_beams[x] = new_beams.get(x,0) + beams[x]
     beams = new_beams.copy()
