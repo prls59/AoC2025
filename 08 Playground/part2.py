@@ -2,12 +2,6 @@ import os
 
 datafile = "input.txt"
 
-if datafile == "input.txt":
-    connections = 1000
-else:
-    connections = 10
-check = 3
-
 box_circuit = {}
 distances = {}
 circuit_size = {}
