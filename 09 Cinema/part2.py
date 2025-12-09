@@ -15,7 +15,7 @@ def valid_rect(a, b, reds):
     rect_l = min(reds[a][0], reds[b][0])
     # Thin rectangles are always valid:
     if rect_r - rect_l > 1 and rect_b - rect_t > 1:
-        # Look for borders within the rectangle (excl. it's own border):
+        # Look for borders within the rectangle (excl. its own border):
         red_count = len(reds)
         for n in range(red_count):
             tile1 = reds[n]
