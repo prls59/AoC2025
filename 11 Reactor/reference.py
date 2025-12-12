@@ -9,6 +9,8 @@ from itertools import permutations
 from operator import mul
 
 start_time = time.time()
+print('Started:', datetime.datetime.now().time())
+
 datafile = "input.txt"
 
 G: dict[str, set[str]] = dict()
@@ -25,4 +27,5 @@ s = 0
 for r in [['svr'] + list(p) + ['out'] for p in permutations(['fft', 'dac'])]:
     s += reduce(mul, (visit(r[i], r[i+1]) for i in range(len(r)-1)))
 
-print(s)
+print('Result for', datafile, '=', s)
+print('Runtime: %s seconds.' % (time.time() - start_time))
